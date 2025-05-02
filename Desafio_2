@@ -1,0 +1,99 @@
+# Desafio DIO Suzano Python Developer: Criando Agentes em Branco no Microsoft Copilot Studio
+
+---
+
+## ✨ 1. Criando um Agente do Zero
+
+### Etapas Iniciais:
+
+1. Acesse o [Microsoft Copilot Studio](https://copilotstudio.microsoft.com/).
+2. No painel inicial na barra lateral, clique em **"Criar"**.
+3. Escolha a opção **"+ Novo Agente"**, sem selecionar modelos ou exemplos prontos, clicando em **"Ignorar para Configurar"** na parte superior da tela para ignorar a criação de agentes por prompt de IA.
+4. Dê um nome ao seu agente, selecione o idioma (para melhorar a IA Generativa selecione o idioma Inglês) e configure a descrição, intruções (definem as ações e modo de operar do agente) e bases de conhecimento.
+5. Clique em **"Criar"**.
+
+> **Importante:** Nesse modo de criação o agente é criado em branco, sendo assim o usuário deverá definir todos os parametros, tópicos, intruções e demais elementos do agente.
+
+---
+
+## 🏋️ 2. Personalizando Tópicos e Fluxos de Conversa
+
+### O que são Tópicos?
+
+Tópicos são blocos de conversa que o agente reconhece a partir de frases do usuário.
+
+### Criando um Tópico Personalizado:
+
+1. Vá até a aba **"Tópicos"**.
+2. Clique em **"+ Adicionar um tópico"**, selecionando a opção **"A partir de um documento em branco"**.
+3. Defina:
+
+   * **Nome do tópico**.
+   * **Frases de gatilho** (ex: "O que é um tópico?", "O que é IA Generativa?").
+4. No editor de fluxo, monte a conversa:
+
+   * Adicione **Enviar uma mensagem** ou
+   * Inclua **Fazer uma pergunta**.
+   * Use **condições** para direcionar o fluxo.
+5. Salve e teste o tópico usando o botão **"Teste"** no canto superior direito.
+
+### Boas Práticas:
+
+* Mantenha frases curtas e diretas.
+* Crie múltiplas frases de gatilho para o mesmo tópico.
+* Use **variáveis** para guardar respostas dos usuários.
+
+---
+
+## ⚠️ 3. Mensagens de Erro e Fluxo de Fallback
+
+### O que é o Fluxo de Fallback?
+
+O fluxo de fallback é ativado quando o agente não entende a intenção do usuário ou há mensagens com tópicos conflitantes.
+
+### Configurando o Fallback:
+
+1. Vá até **"Tópicos"** > selecione **"Sistema"** > selecione **"Fallback"**.
+2. Você pode editar o conteúdo para:
+
+   * Exibir uma mensagem de erro amigável (ex: "Desculpe, não entendi sua pergunta.").
+   * Oferecer opções (ex: "Você quer falar sobre pagamentos, suporte ou pedidos?").
+   * Redirecionar o usuário a tópicos conhecidos, gerar respostas por IA Generativa ou transferir para um atendente humano, fornecendo meios de contato alternativos.
+
+---
+
+## 🤖 4. Utilizando Respostas com IA Generativa
+
+### Habilitando IA Generativa:
+
+1. Acesse as **configurações**.
+2. Selecione a opção **"IA Generativa"**.
+3. Defina:
+
+   * **Como seu agente deve interagir com as pessoas. Nessa opção em PT-BR só é possivel chamar as ações dentro de um tópico.
+   * **Quão rigorosa deve ser a moderação do conteúdo. Nessa opção o usuário deve escolher o quão criativo a IA pode ser e o quão fiel às fontes dele base ela deve se ater, podendo escolher entre Baixo, Médio e Alto, sendo baixo mais criativo e alto mais fiel às fontes de conhecimento. 
+
+### Inserindo Respostas com IA em Tópicos:
+
+* No editor de tópicos, adicione uma nova ação em "+" > "Avançado" > **"Respostas Generativas"**.
+* Configure as propriedades, sendo importante definir as fontes de conhecimento, se o agente pode utilizar as fontes de conhecimento abertas (ex: usar GPT livremente), nivel de moderação, inserção de um prompt para refinar as respostas, etc.
+
+### Ajustando Qualidade da Resposta:
+
+Você pode controlar o grau de criatividade e precisão da IA com o parâmetro de **Temperatura** (se disponível):
+
+* **Temperatura baixa (0.1–0.3)**: respostas mais exatas e objetivas.
+* **Temperatura média (0.4–0.6)**: equilíbrio entre criatividade e foco.
+* **Temperatura alta (0.7–1.0)**: respostas mais abertas, criativas, mas menos precisas.
+
+---
+
+## 📚 Observações Importantes:
+
+* **A melhor idioma para atingir os melhores resultados com a IA Generativa é o Ingês.
+* **Dependendo da localidade do ambiente é possível haver divergências entre as configurações e recursos disponíveis, sendo normalmente a versão US mais atualizada, porém isso pode trazer efeitos indesejados no desempenho do agente.
+* **Sempre utilize instruções claras e precisas, evitando comandos que possam trazer resultados indesejados.
+* **Não adicione documentos confidenciais às bases de conhecimento, por mais que o armazenamento dessas informações seja seguro no ambiente da Microsoft, todos os usuários do agente poderão ter acesso à informações na utilização da IA dos agentes.
+
+
+
