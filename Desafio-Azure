@@ -1,0 +1,73 @@
+## #Anotações sobre Azure Speech Studio & Azure Language Studio
+## #**Azure Speech Studio**
+# Ferramenta da Azure para trabalhar com áudio e voz. Permite testar e configurar funcionalidades de fala sem precisar programar.
+
+## Speech to Text (fala → texto)
+Transcreve áudio em tempo real.
+
+Suporta múltiplos idiomas e pode traduzi-los.
+
+Útil para legendas automáticas, comandos de voz, etc.
+
+Pode ser personalizado para vocabulários específicos.
+
+## Text to Speech (texto → fala)
+Converte texto em fala com vozes naturais.
+
+Oferece vozes pré-construídas e personalizadas.
+
+Permite ajustar entonação, ritmo e emoção.
+
+Ideal para criar assistentes virtuais, leitores de tela, ferramentas de acessibulidade, etc.
+
+## Tradução de Fala
+Traduz fala de um idioma para outro em tempo real.
+
+Suporta diversos idiomas.
+
+Aplicável em reuniões multilíngues(teams), aplicativos de tradução, etc.
+
+## Análise de Fala
+Avalia aspectos como pronúncia, entonação e fluência.
+
+Útil para treinamento de idiomas e feedback em tempo real.
+
+## #Azure Language Studio
+Ferramenta da Azure para análise e compreensão de linguagem natural. 
+
+## Análise de Texto
+Extrai informações como sentimentos, entidades e frases-chave de textos, inclusive aponta quais elementos textuais foram utilizados para 
+expressar sentimentos ou ideia do texto.
+
+Suporta textos informais e com erros gramaticais.
+
+Aplicável em análise de feedback, redes sociais, etc.
+
+## Compreensão de Linguagem Conversacional (CLU)
+Identifica a intenção por trás de uma frase e extrai informações relevantes.
+
+Permite treinar modelos personalizados para diferentes domínios.
+
+Integrável com bots para respostas mais naturais.
+
+## Perguntas e Respostas (QnA)
+Cria bases de conhecimento com perguntas e respostas.
+
+Permite que bots respondam automaticamente a perguntas frequentes.
+
+Suporta importação de documentos como PDFs e URLs.
+
+## Integração com Bots
+As funcionalidades de fala e linguagem podem ser integradas a bots usando o Azure Bot Service.
+
+Permite criar bots que entendem, falam e respondem de forma natural.
+
+Ideal para atendimento ao cliente, assistentes virtuais, etc.
+
+Essas anotações foram baseadas nos seguintes links e nas aulas do curso Dio Suzano Python Developer:
+
+>>> Laboratório de Fala| [https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Labs/09-speech.html]
+
+>>> Laboratório de Análise de Texto| [https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Labs/06-text-analysis.html]
+
+
